@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
   name: "MuPDFReader",
+  platforms: [
+    .macOS(.v11)
+  ],
   dependencies: [
     .package(path: "../MuPDF")
   ],
